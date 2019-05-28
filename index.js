@@ -36,7 +36,6 @@ const getAddresses = async codes => {
 };
 
 //! here is what will be run
-
 getAddresses(removeSpace(shortCodes))
   .then(result => {
     const transformed = new otcsv(result);
