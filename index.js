@@ -31,7 +31,7 @@ const getAddresses = async codes => {
 };
 
 //! here is what will be run
-getAddresses(removeSpace(codes.eglingtonEast))
+getAddresses(removeSpace(codes.edenbridge))
   .then(result => {
     const transformed = new otcsv(result);
     return transformed.toDisk("./output.csv");
